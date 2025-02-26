@@ -1,0 +1,96 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    /* background-image: url(https://i.pinimg.com/736x/6b/84/de/6b84de92132fb5f0cd39fd51e155bca9.jpg); */
+    background-image: url(https://i.pinimg.com/736x/4c/27/5f/4c275f8e64875cfd6a1fb7e3266522b0.jpg);
+    background-repeat: no-repeat;
+    object-fit: contain;
+}
+
+/* Outer container */
+.content {
+    background-color: white;
+    border: 2px solid black;
+    padding: 20px;
+    text-align: center;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Inner container */
+.cont2 {
+    padding: 10px;
+}
+
+/* Heading */
+.heading {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Main title */
+h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+/* Options section */
+.options {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+
+/* List styling */
+#opt1, #opt2 {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 5px 0;
+    position: relative;
+    padding-left: 20px;
+}
+
+/* Colored dots before list items */
+li::before {
+    content: "*";
+    position: absolute;
+    left: 0;
+    font-size: 18px;
+}
+
+/* Color-coding */
+#opt1 li:nth-child(1)::before { color: orange; }  /* Happy */
+#opt1 li:nth-child(2)::before { color: red; }     /* Thankful */
+#opt1 li:nth-child(3)::before { color: darkred; } /* Angry */
+
+#opt2 li:nth-child(1)::before { color: blue; }    /* Anxious */
+#opt2 li:nth-child(2)::before { color: purple; }  /* Lonely */
+#opt2 li:nth-child(3)::before { color: pink; }    /* Sad */
+
+/* Quranic verse message */
+.message {
+    background-color: #f2f2f2;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-style: italic;
+}
+/* Surah reference */
+.surah {
+    font-weight: bold;
+    margin-top: 5px;
+}
